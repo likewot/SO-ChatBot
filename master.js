@@ -6136,7 +6136,7 @@ bot.addCommand({
 (function () {
 
 //only activate for SO room 17; TODO consider changing if well accepted
-if (bot.adapter.site !== 'stackoverflow' || bot.adapter.roomid !== 17) {
+if (bot.adapter.site !== 'stackoverflow' || bot.adapter.roomid !== 1) {
 	bot.log('Not activating unformatted code checking; not in right room/site');
 	return;
 }
@@ -6152,7 +6152,7 @@ IO.register( 'rawinput', function checkUnformattedCode (msgObj) {
 	}
 
 	//so far it should only apply to the js room
-	if ( msgObj.room_id !== 17 ) {
+	if ( msgObj.room_id !== 1 ) {
 		return;
 	}
 
