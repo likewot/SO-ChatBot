@@ -3404,8 +3404,6 @@ IO.register( 'input', function afkInputListener ( msgObj ) {
 })();
 
 ;
-
-;
 (function () {
 "use strict";
 
@@ -4497,10 +4495,6 @@ bot.addCommand({
 }());
 
 ;
-
-;
-
-;
 //listener to help decide which Firefly episode to watch
 
 bot.listen( /(which |what |give me a )?firefly( episode)?/i, function ( msg ) {
@@ -4799,8 +4793,6 @@ bot.addCommand({
 }());
 
 ;
-
-;
 (function () {
 var baseURL = 'http://api.jquery.com/';
 
@@ -4882,8 +4874,6 @@ bot.addCommand({
 });
 
 })();
-
-;
 
 ;
 (function () {
@@ -5183,8 +5173,6 @@ bot.addCommand({
 })();
 
 ;
-
-;
 (function () {
 // #151: Listen for meme image names and reply with that meme.
 
@@ -5351,8 +5339,6 @@ bot.addCommand( moustache );
 }());
 
 ;
-
-;
 (function () {
 
 //collection of nudges; msgObj, time left and the message itself
@@ -5478,8 +5464,6 @@ function nudgeListener ( args ) {
 }
 
 }());
-
-;
 
 ;
 (function () {
@@ -6236,7 +6220,8 @@ function createLecture ( content ) {
 
 	var lecture = (
 		'Please don\'t post unformatted code - ' +
-		'hit Ctrl+K before sending, and see the {0}.'
+		'hit Ctrl+K before sending, use up-arrow to edit messages, ' +
+		'and see the {0}.'
 	).supplant( bot.adapter.link('faq', '/faq') );
 
 	if ( lineCount >= 10 ) {
@@ -6258,8 +6243,6 @@ function hasUnformattedCode ( text ) {
 }
 
 })();
-
-;
 
 ;
 (function () {
@@ -6481,8 +6464,6 @@ bot.addCommand({
 });
 
 })();
-
-;
 
 ;
 bot.addCommand({
